@@ -1,0 +1,34 @@
+
+//
+//  config.pch
+//  网易新闻客户端
+//
+//  Created by lieon on 16/2/9.
+//  Copyright (c) 2016年 lieon. All rights reserved.
+//
+
+#ifndef ________config_pch
+#define ________config_pch
+#import "UIView+Extension.h"
+#import "MJExtension.h"
+
+// 颜色
+#define lieonColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define lieonColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define lieonRandomColor lieonColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 左边弹窗的frame
+
+
+#define windowW [UIScreen mainScreen].bounds.size.width
+#define windowH  [UIScreen mainScreen].bounds.size.height
+
+#define leftMenuX 0
+#define leftMenuY 120
+#define leftMenuW windowW
+#define leftMenuH 60
+
+
+#endif
